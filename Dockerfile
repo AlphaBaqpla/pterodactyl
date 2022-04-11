@@ -19,9 +19,8 @@ RUN         apt update && apt upgrade -y \
 				&& dpkg-reconfigure --frontend noninteractive locales \
 				&& useradd -m -d /home/container -s /bin/bash container \
 				&& dpkg --add-architecture i386 \
-				&& apt-get update -y \
-				&& apt-get install -y wine \
-				&& apt-get install -y winetricks
+				&& apt install -y winetricks \ 
+				&& apt install -y wine
 				
 
 WORKDIR ${BDSDIR}
