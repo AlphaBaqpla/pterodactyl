@@ -20,7 +20,10 @@ RUN         apt update && apt upgrade -y \
 				&& useradd -m -d /home/container -s /bin/bash container \
 				&& dpkg --add-architecture i386 \
 				&& apt-get update -y \
-				&& apt-get install -y wine32
+				&& apt-get install -y wine32 \
+				&& apt-get install -y wine \
+				&& apt-get install -y wine64 \
+				&& apt-get install -y winetricks
 				
 
 WORKDIR ${BDSDIR}
