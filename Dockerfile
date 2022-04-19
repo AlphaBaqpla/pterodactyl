@@ -4,7 +4,7 @@ VOLUME [ "/home/container" ]
 
 ENV BDSDIR /home/container/
 
-LABEL       author="David Ignatenko" maintainer="aqpla"
+LABEL       author="David Ignatenko" maintainer="2aqpla"
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
