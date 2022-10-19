@@ -1,4 +1,5 @@
 FROM        --platform=$TARGETOS/$TARGETARCH debian:buster-slim
+
 VOLUME [ "/home/container" ]
 
 ENV BDSDIR /home/container/
