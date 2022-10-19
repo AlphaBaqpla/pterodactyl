@@ -4,11 +4,6 @@ VOLUME [ "/home/container" ]
 
 ENV BDSDIR /home/container/
 
-LABEL       author="David Ignatenko" maintainer="2aqpla"
-
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
-LABEL       org.opencontainers.image.licenses=MIT
-
 WORKDIR /home/container/
 
 RUN         apt update && apt upgrade -y \
